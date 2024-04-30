@@ -2,17 +2,17 @@
 
 Hi, this is my online Portfolio. 👨🏽‍💻
 
-**I am currently working on this** and I only deployed the first version with home 🌱
+**I am currently working on this**
 
-if you want to see the portfolio it is here -> [Porfolio](https://my-portfolio-l-json.vercel.app/)
+Web portfolio in progress, which tries to imitate the style of an interactive shell console and try to talk about myself.🌱
+
+if you want to see the portfolio -> [¡Click me!](https://my-portfolio-l-json.vercel.app/)
 
 ## Tecnologies 🛠
 
-This web page uses, as its main framework, NextJS with React.
+Created with NextJS/Typescripts (_this is unnecessary but, I love typescript_) 🤓.
 
-As a programming language it uses typescript (_this is unnecessary but, I love typescript_).
-
-For styles and animations used a normal css global module, and for components, styled-components <💅🏽>
+Styles with styled-components <💅🏽>
 
 And finally the page was deployed with vercel 💪
 
@@ -20,4 +20,4 @@ And finally the page was deployed with vercel 💪
 
 - [@LautaroJSON](https://github.com/LautaroJSON)
 
-(_only me... obviously_)
+(_Me... obviously_)
