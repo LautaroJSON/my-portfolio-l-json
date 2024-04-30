@@ -1,12 +1,8 @@
 # My Portfolio Online [L-JSON]
 
-Hi, this is my online Portfolio. 👨🏽‍💻
-
-**I am currently working on this**
-
-Web portfolio in progress, which tries to imitate the style of an interactive shell console and try to talk about myself.🌱
-
-if you want to see the portfolio -> [¡Click me!](https://my-portfolio-l-json.vercel.app/)
+ Web portfolio in progress, which tries to imitate the style of an interactive shell console and try to talk about myself. 👨🏽‍💻
+ 
+**I am currently working on this**🌱 if you want to see the portfolio -> [¡Click me!](https://my-portfolio-l-json.vercel.app/)
 
 ## Tecnologies 🛠
 
