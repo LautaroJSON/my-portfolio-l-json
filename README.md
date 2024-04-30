@@ -4,7 +4,7 @@ Hi, this is my online Portfolio. 👨🏽‍💻
 
 **I am currently working on this** and I only deployed the first version with home 🌱
 
-if you want to see the portfolio it is here -> [Porfolio](https://lautaro-json.vercel.app/home)
+if you want to see the portfolio it is here -> [Porfolio](https://my-portfolio-l-json-git-develop-lautarojsons-projects.vercel.app/)
 
 ## Tecnologies 🛠
 

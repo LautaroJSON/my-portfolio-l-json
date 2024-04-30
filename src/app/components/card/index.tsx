@@ -1,6 +1,14 @@
 "use client"
-import React, { useEffect, useRef, useState } from "react"
-import { CardContainer, CardHeader, CardStyled, Spin } from "./styles"
+import React, { useRef, useState } from "react"
+import {
+  CardContainer,
+  CardContent,
+  CardHeader,
+  CardStyled,
+  Text,
+  Spin,
+  Span,
+} from "./styles"
 
 interface Position {
   x: number
@@ -86,6 +94,14 @@ function Card() {
             <span>💻PORTFOLIO:/c/Users/Lautaro</span>
             <Spin onClick={() => handleClickAnimation("shake")}>✖</Spin>
           </CardHeader>
+
+          <CardContent>
+            <Span colorParam="#BB80B3">MINGW64</Span>
+            <Span colorParam="#9ECE58"> Lautaro@PC </Span>
+            <Span colorParam="#FAED70"> ~</Span>
+
+            <Text contentEditable>$ hello world!</Text>
+          </CardContent>
         </CardStyled>
       </CardContainer>
     </>

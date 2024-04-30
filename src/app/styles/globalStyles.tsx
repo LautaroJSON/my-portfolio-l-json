@@ -12,6 +12,6 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0;
         animation: ${bgAnimation} 10s ease-in-out infinite;
         background: linear-gradient(165deg, rgba(7,1,27,1) 5%, rgba(23,1,64,1) 40%, rgba(38,0,127,1) 65%, rgba(149,29,37,1) 100%);
-        background-size: 150% 150%;
+        background-size: 125% 125%;
     }
 `

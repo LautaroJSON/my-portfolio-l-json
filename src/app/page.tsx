@@ -11,7 +11,7 @@ export default function Home() {
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Main>
-          <Header></Header>
+          {/* <Header></Header> */}
           <CardContainer>
             <Card />
           </CardContainer>
