@@ -55,6 +55,18 @@ const blinkAnimation = keyframes`
 const typingAnimation = keyframes`
   from { width: 0 }
 `
+const apperAnimation = keyframes`
+  0%{
+    border: none;
+    opacity: 1;
+  } 20%{
+    border: 5px solid #333;
+  } 
+  45%{
+    opacity: 0.3;
+    border: none;
+  }
+`
 
 export const CardContainer = styled.div`
   color: white;
@@ -66,7 +78,7 @@ export const CardStyled = styled.div<{
 }>`
   position: relative;
   width: 977px;
-  height: 805px;
+  height: 855px;
   border-radius: 16px;
 
   padding: 16px;
@@ -128,8 +140,25 @@ export const CardHeader = styled.div`
 export const CardContent = styled.div`
   padding: 16px;
 `
-export const Span = styled.span<{ $colorparam?: string }>`
+export const Span = styled.span<{ $colorparam?: string; $border?: string }>`
   color: ${(props) => (props.$colorparam ? props.$colorparam : "white")};
+  ${({ $border, $colorparam }) =>
+    $border &&
+    css`
+      border: ${$border};
+      padding: 6px;
+      cursor: pointer;
+      margin: 0px 16px;
+      transition: all 0.3s;
+      box-shadow: 0px 6px 9px 0px rgba(22, 22, 22, 0.3);
+
+      &:hover {
+        border: 3px solid ${$colorparam};
+        background-color: #00000055;
+        box-shadow: 0px 6px 9px 0px rgba(26, 26, 26, 0.7);
+      }
+    `}
+
   font-size: 1em;
 `
 export const Text = styled.p<{
@@ -155,10 +184,15 @@ export const Text = styled.p<{
       border-right: 0.15em solid white;
       animation:
         ${typingAnimation} 3.5s,
-        ${blinkAnimation} 0.75s step-end infinite;
+        ${blinkAnimation} 0.75s forwards;
     `}
 `
-export const TextContainer = styled.div``
+export const TextContainer = styled.div`
+  animation: ${startAnimation} 1.6s ease forwards;
+  animation-delay: 1.3s;
+  opacity: 0;
+  /* display: none; */
+`
 
 export const Icon = styled.div`
   display: flex;
