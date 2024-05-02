@@ -1,17 +1,22 @@
 import { createGlobalStyle, keyframes } from "styled-components"
 
 const bgAnimation = keyframes`
-    0%{background-position: 0 50%; }
-    50%{background-position: 100% 50%;}
-    100%{background-position: 0 50%; }
+    from{background-position: 0% 0%; }
+    to{background-position: 100% 100%;}
 `
 export const GlobalStyles = createGlobalStyle`
         
     body{
         font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
         margin: 0;
-        animation: ${bgAnimation} 10s ease-in-out infinite;
-        background: linear-gradient(165deg, rgba(7,1,27,1) 5%, rgba(23,1,64,1) 40%, rgba(38,0,127,1) 65%, rgba(149,29,37,1) 100%);
-        background-size: 125% 125%;
+        animation: ${bgAnimation} 7s ease-in-out infinite alternate forwards;
+        background: linear-gradient(165deg, rgba(7,1,27,1) 0%, rgba(23,1,64,1) 25%, rgba(38,0,127,1) 50%, rgba(149,29,37,1) 100%);
+        /* background: radial-gradient(ellipse at bottom, #33003e 0%,  #070118 100%); */
+        background-size: 150% 150%;
+
+        @media (max-width: 560px) {
+            /* font-size: 0.8em; */
+        }
     }
 `
