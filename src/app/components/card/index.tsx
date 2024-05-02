@@ -163,7 +163,7 @@ function Card() {
               </Text>
             </TextContainer>
             <br />
-            <TextContainer>
+            <TextContainer $animationdelay="1.5s">
               <Text $size="1.3em" $weight="500" $margin="10px 0px 0px 0px">
                 <Span $colorparam="white" $border="1px solid white">
                   LinkIn
@@ -179,9 +179,7 @@ function Card() {
                 </Span>
               </Text>
             </TextContainer>
-
             <br />
-
             {/* <TextContainer>
               <Text $size="1.6em" $margin="36px 0px 16px 0px">
                 Sobre mi
@@ -198,7 +196,7 @@ function Card() {
                 <Span> html Css </Span>
               </Text>
             </TextContainer> */}
-            <TextContainer>
+            <TextContainer $animationdelay="2s">
               <Text $size="1.6em" $weight="500" $margin="36px 0px 0px 0px">
                 <Span $colorparam="#FAED70">💼 Experiencia laboral</Span>
               </Text>

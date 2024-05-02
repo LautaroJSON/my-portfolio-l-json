@@ -67,7 +67,6 @@ const apperAnimation = keyframes`
     border: none;
   }
 `
-
 export const CardContainer = styled.div`
   color: white;
 `
@@ -187,13 +186,14 @@ export const Text = styled.p<{
         ${blinkAnimation} 0.75s forwards;
     `}
 `
-export const TextContainer = styled.div`
+export const TextContainer = styled.div<{ $animationdelay?: string }>`
   animation: ${startAnimation} 1.6s ease forwards;
-  animation-delay: 1.3s;
+  animation-delay: ${(props) =>
+    props.$animationdelay ? `${props.$animationdelay}` : "1s"};
+
   opacity: 0;
   /* display: none; */
 `
-
 export const Icon = styled.div`
   display: flex;
   justify-content: center;
