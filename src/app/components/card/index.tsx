@@ -136,18 +136,17 @@ function Card() {
           </CardHeader>
 
           <CardContent>
+            <Text $weight="300" $size="1em">
+              <Span $colorparam="#BB80B3">MINGW64</Span>
+              <Span $colorparam="#9ECE58"> Lautaro@PC </Span>
+              <Span $colorparam="#FAED70"> ~</Span>
+            </Text>
             <TextContainer>
-              <Text $weight="300" $size="1em">
-                <Span $colorparam="#BB80B3">MINGW64</Span>
-                <Span $colorparam="#9ECE58"> Lautaro@PC </Span>
-                <Span $colorparam="#FAED70"> ~</Span>
-              </Text>
-
               <Text
                 $weight="500"
                 $size="1.6em"
-                $margin="16px 0px"
-                $animation={true}
+                $margin="36px 0px 16px 0px"
+                // $animation={true}
               >
                 Hello world, soy Lautaro!
                 {/* <Span $colorparam="#FAED70"> Lautaro</Span>! */}
@@ -155,20 +154,88 @@ function Card() {
 
               <Text $weight="300" $size="1.6em">
                 Un
-                <Span $colorparam="#FAED70">
-                  {" "}
-                  Desarrollador Full-stack SSR{" "}
-                </Span>
+                <Span $colorparam="#FAED70"> Desarrollador Full-Stack </Span>
                 con
                 <Span $colorparam="#9ECE58"> +4 años </Span>de experiencia
                 <br />
                 residido en
                 <Span $colorparam="#89DDFF"> Buenos Aires, Argentina. </Span>
-                Especializado en el
-                <Span $colorparam="#BB80B3"> Front-End.</Span>
               </Text>
             </TextContainer>
-            <TextContainer></TextContainer>
+            <br />
+            <TextContainer>
+              <Text $size="1.3em" $weight="500" $margin="10px 0px 0px 0px">
+                <Span $colorparam="white" $border="1px solid white">
+                  LinkIn
+                </Span>
+                <Span $colorparam="white" $border="1px solid white">
+                  Github
+                </Span>
+                <Span $colorparam="white" $border="1px solid white">
+                  Mail
+                </Span>
+                <Span $colorparam="white" $border="1px solid white">
+                  CV
+                </Span>
+              </Text>
+            </TextContainer>
+
+            <br />
+
+            {/* <TextContainer>
+              <Text $size="1.6em" $margin="36px 0px 16px 0px">
+                Sobre mi
+              </Text>
+              <Text $size="1.3em">
+                Actualmente estoy especializado en
+                <Span $colorparam="#BB80B3"> Front-End </Span> enfocado en las
+                tecnologicas
+              </Text>
+              <Text $size="1.3em" $margin="6px 0px 0px 6px" $weight="500">
+                <Span> NextJS </Span>
+                <Span> TypeScrips </Span>
+                <Span> Styles-Componentes </Span>
+                <Span> html Css </Span>
+              </Text>
+            </TextContainer> */}
+            <TextContainer>
+              <Text $size="1.6em" $weight="500" $margin="36px 0px 0px 0px">
+                <Span $colorparam="#FAED70">💼 Experiencia laboral</Span>
+              </Text>
+              <Text $size="1em" $weight="300" $margin="36px 0px 0px 16px">
+                <Span $colorparam="#ffffffc8">Actualidad - 2021</Span>
+              </Text>
+              <Text $size="1.3em" $weight="600" $margin="10px 0px 0px 16px">
+                <Span $colorparam="#FAED70">Front-End developer - NextJS </Span>
+                | Emergencias
+              </Text>
+              <Text $size="1.3em" $margin="10px 0px 0px 16px">
+                Trabajando en diferentes proyectos web apps a gran escala de
+                Inició a fin dirigido a sus usuarios (operativos,
+                Administrativos, comerciales, médicos) para los diferentes
+                negocios de salud digital de la compañía, con la escalabilidad
+                bajo el modelo SaaS y metodologia AGILE
+              </Text>
+              <Text $size="1.3em" $margin="10px 0px 0px 16px" $weight="500">
+                NextJS - Typescript - html - Sass - styled-components
+              </Text>
+              <Text $size="1em" $weight="300" $margin="36px 0px 0px 16px">
+                <Span $colorparam="#ffffffc8">2021 - 2020</Span>
+              </Text>
+              <Text $size="1.3em" $weight="600" $margin="10px 0px 0px 16px">
+                <Span $colorparam="#FAED70">
+                  Front-End developer - Angular{" "}
+                </Span>
+                | Free lance
+              </Text>
+              <Text $size="1.3em" $margin="10px 0px 0px 16px">
+                Realize una web app para radio local tomando los requisitos del
+                cliente, definiendo estilos y estructura de la pagina
+              </Text>
+              <Text $size="1.3em" $margin="10px 0px 0px 16px" $weight="500">
+                Angular - Typescript - html - css
+              </Text>
+            </TextContainer>
           </CardContent>
         </CardStyled>
       </CardContainer>
