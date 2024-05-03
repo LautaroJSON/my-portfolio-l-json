@@ -1,8 +1,12 @@
 import { TextContainer, Text, Span } from "./styles"
 
+const config = {
+  animationDeplay: 1,
+}
+
 export const jsxStep = {
   work: (
-    <TextContainer $animationdelay="2s">
+    <TextContainer $animationdelay={`${config.animationDeplay}s`}>
       <Text $size="1.6em" $weight="500" $margin="36px 0px 0px 0px">
         <Span $colorparam="#FAED70">💼 Experiencia laboral</Span>
       </Text>
@@ -30,7 +34,7 @@ export const jsxStep = {
     </TextContainer>
   ),
   formation: (
-    <TextContainer $animationdelay="2.3s">
+    <TextContainer $animationdelay={`${config.animationDeplay}s`}>
       <Text $size="1.6em" $weight="500" $margin="36px 0px 0px 0px">
         <Span $colorparam="#BB80B3">👨‍🏫 Formacion</Span>
       </Text>

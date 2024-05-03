@@ -2,8 +2,8 @@ import StyledComponentsRegistry from "./lib/registro"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "L Portfolio",
-  description: "🤫",
+  title: "Portfolio de Lautaro - Desarrollador Full-Stack SSR",
+  description: "Desarrollador web +4 años de experiencia NextJS",
 }
 
 export default function RootLayout({

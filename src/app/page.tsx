@@ -18,21 +18,8 @@ export default function Home() {
     }
   }
 
-  // function handleKeydown(event: { keyCode: number }) {
-  //   // Verificar si la tecla presionada es F11
-  //   if (event.keyCode === 122) {
-  //     if (fullScreenDetected) {
-  //       setFullScreenDetected(false)
-  //     } else {
-  //       setFullScreenDetected(true)
-  //     }
-  //     // Aquí puedes realizar acciones específicas cuando el usuario presiona F11
-  //   }
-  // }
-
   useEffect(() => {
     document.addEventListener("fullscreenchange", HandlerFullscreenChange)
-    // document.addEventListener("keydown", handleKeydown)
   }, [])
 
   return (

@@ -174,14 +174,8 @@ function Card() {
               <Span $colorparam="#FAED70"> ~</Span>
             </Text>
             <TextContainer>
-              <Text
-                $weight="500"
-                $size="1.6em"
-                $margin="36px 0px 16px 0px"
-                // $animation={true}
-              >
+              <Text $weight="500" $size="1.6em" $margin="36px 0px 16px 0px">
                 Hello world, soy Lautaro!
-                {/* <Span $colorparam="#FAED70"> Lautaro</Span>! */}
               </Text>
 
               <Text $weight="300" $size="1.6em">
@@ -214,7 +208,12 @@ function Card() {
                   Mail
                 </Span>
                 <Span $colorparam="white" $border="1px solid white">
-                  CV
+                  <a
+                    href="/assets/CV_LAUTARO_FERNANDEZ_2023-ES.pdf"
+                    download="CV_LAUTARO_FERNANDEZ_2023-ES.pdf"
+                  >
+                    Curriculum
+                  </a>
                 </Span>
               </Text>
             </TextContainer>
@@ -241,34 +240,3 @@ function Card() {
 }
 
 export default Card
-
-{
-  /* <TextContainer $animationdelay="2.3s">
-<Text $size="1.6em" $weight="500" $margin="36px 0px 0px 0px">
-  <Span $colorparam="#FAED70">👨‍🏫 Formacion</Span>
-</Text>
-<Text $size="1em" $weight="300" $margin="24px 0px 0px 16px">
-  <Span $colorparam="#ffffffc8">2018 - 2020</Span>
-</Text>
-<Text $size="1.3em" $weight="600" $margin="10px 0px 0px 16px">
-  <Span $colorparam="#FAED70">UTN FRA</Span>| Tecnico Superior en
-  Programacion
-</Text>
-<Text $size="1.3em" $margin="10px 0px 0px 16px">
-  Comenzando con logica de programacion, creando ABMs en C,
-  pasando a C# conectando con bases de datos locales SQL, y
-  terminando con HTML CSS por el lado del front, Php y estructura
-  API REST y avanzando con Angular y Ionic / con bases de datos y
-  deploy en firebase.
-</Text>
-<Text $size="1.3em" $margin="10px 0px 0px 16px" $weight="500">
-  C - C# - HTML CSS - Typescrips - Angular - Ionic - firebase
-</Text>
-<Text $size="1em" $margin="8px 0px 0px 16px" $weight="400">
-  <Span $colorparam="#ffffffc8">
-    Extras: Git - Sistema linux - POO
-  </Span>
-</Text>
-
-</TextContainer> */
-}
