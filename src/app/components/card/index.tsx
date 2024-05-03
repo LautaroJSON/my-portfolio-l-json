@@ -228,7 +228,10 @@ function Card() {
             >
               <Text $size="1.8em">Anterior</Text>
             </Button>
-            <Button onClick={() => handleNextStep("next")} className={"right"}>
+            <Button
+              onClick={() => handleNextStep("next")}
+              className={step + 1 >= ArrayStep.length ? "hidden" : ""}
+            >
               <Text $size="1.8em">Siguiente</Text>
             </Button>
           </CardFooter>
