@@ -10,8 +10,12 @@ import {
   Text,
   IconContainer,
   TextContainer,
+  Button,
+  CardFooter,
+  InfoContainerStep,
 } from "./styles"
 import Icons from "../icons"
+import { ArrayStep, jsxStep } from "./sectionSteps"
 
 interface Position {
   x: number
@@ -29,7 +33,10 @@ function Card() {
     rotate: boolean
     shake: boolean
     start: boolean
-  }>({ rotate: false, shake: false, start: true })
+    apper: boolean
+  }>({ rotate: false, shake: false, start: true, apper: false })
+
+  const [step, setStep] = useState<number>(0)
 
   const handleClickAnimation = (type: "rotate" | "shake" | "start") => {
     setAnimations({ ...animations, [type]: !animations[type] })
@@ -70,6 +77,31 @@ function Card() {
     } else {
       fullScreenElement?.requestFullscreen()
     }
+  }
+
+  const handleNextStep = (move: "next" | "back") => {
+    if (move === "next") {
+      if (step + 1 <= ArrayStep.length) {
+        setStep((prev) => prev + 1)
+        setAnimations({ ...animations, apper: true })
+        setTimeout(() => {
+          setAnimations({ ...animations, apper: false })
+        }, 1000)
+      }
+    } else {
+      if (step - 1 >= 0) {
+        setStep((prev) => prev - 1)
+        setAnimations({ ...animations, apper: true })
+        setTimeout(() => {
+          setAnimations({ ...animations, apper: false })
+        }, 1000)
+      }
+    }
+  }
+
+  const renderStep = () => {
+    const stapName = ArrayStep[step]
+    return jsxStep[stapName]
   }
 
   useEffect(() => {
@@ -187,61 +219,21 @@ function Card() {
               </Text>
             </TextContainer>
             <br />
-            {/* <TextContainer>
-              <Text $size="1.6em" $margin="36px 0px 16px 0px">
-                Sobre mi
-              </Text>
-              <Text $size="1.3em">
-                Actualmente estoy especializado en
-                <Span $colorparam="#BB80B3"> Front-End </Span> enfocado en las
-                tecnologicas
-              </Text>
-              <Text $size="1.3em" $margin="6px 0px 0px 6px" $weight="500">
-                <Span> NextJS </Span>
-                <Span> TypeScrips </Span>
-                <Span> Styles-Componentes </Span>
-                <Span> html Css </Span>
-              </Text>
-            </TextContainer> */}
-            <TextContainer $animationdelay="2s">
-              <Text $size="1.6em" $weight="500" $margin="36px 0px 0px 0px">
-                <Span $colorparam="#FAED70">💼 Experiencia laboral</Span>
-              </Text>
-              <Text $size="1em" $weight="300" $margin="24px 0px 0px 16px">
-                <Span $colorparam="#ffffffc8">Actualidad - 2021</Span>
-              </Text>
-              <Text $size="1.3em" $weight="600" $margin="10px 0px 0px 16px">
-                <Span $colorparam="#FAED70">Front-End developer - NextJS </Span>
-                | Emergencias
-              </Text>
-              <Text $size="1.3em" $margin="10px 0px 0px 16px">
-                Trabajando en diferentes proyectos web apps a gran escala de
-                Inició a fin dirigido a sus usuarios (operativos,
-                Administrativos, comerciales, médicos) para los diferentes
-                negocios de salud digital de la compañía, con la escalabilidad
-                bajo el modelo SaaS y metodologia AGILE
-              </Text>
-              <Text $size="1.3em" $margin="10px 0px 0px 16px" $weight="500">
-                NextJS - Typescript - html - Sass - styled-components
-              </Text>
-              <Text $size="1em" $weight="300" $margin="36px 0px 0px 16px">
-                <Span $colorparam="#ffffffc8">2021 - 2020</Span>
-              </Text>
-              <Text $size="1.3em" $weight="600" $margin="10px 0px 0px 16px">
-                <Span $colorparam="#FAED70">
-                  Front-End developer - Angular{" "}
-                </Span>
-                | Free lance
-              </Text>
-              <Text $size="1.3em" $margin="10px 0px 0px 16px">
-                Realize una web app para radio local tomando los requisitos del
-                cliente, definiendo estilos y estructura de la pagina
-              </Text>
-              <Text $size="1.3em" $margin="10px 0px 0px 16px" $weight="500">
-                Angular - Typescript - html - css
-              </Text>
-            </TextContainer>
+            <InfoContainerStep $triggerAnimation={animations.apper}>
+              {renderStep()}
+            </InfoContainerStep>
           </CardContent>
+          <CardFooter>
+            <Button
+              onClick={() => handleNextStep("back")}
+              className={step === 0 ? "hidden" : ""}
+            >
+              <Text $size="1.8em">Anterior</Text>
+            </Button>
+            <Button onClick={() => handleNextStep("next")} className={"right"}>
+              <Text $size="1.8em">Siguiente</Text>
+            </Button>
+          </CardFooter>
         </CardStyled>
       </CardContainer>
     </>
@@ -249,3 +241,34 @@ function Card() {
 }
 
 export default Card
+
+{
+  /* <TextContainer $animationdelay="2.3s">
+<Text $size="1.6em" $weight="500" $margin="36px 0px 0px 0px">
+  <Span $colorparam="#FAED70">👨‍🏫 Formacion</Span>
+</Text>
+<Text $size="1em" $weight="300" $margin="24px 0px 0px 16px">
+  <Span $colorparam="#ffffffc8">2018 - 2020</Span>
+</Text>
+<Text $size="1.3em" $weight="600" $margin="10px 0px 0px 16px">
+  <Span $colorparam="#FAED70">UTN FRA</Span>| Tecnico Superior en
+  Programacion
+</Text>
+<Text $size="1.3em" $margin="10px 0px 0px 16px">
+  Comenzando con logica de programacion, creando ABMs en C,
+  pasando a C# conectando con bases de datos locales SQL, y
+  terminando con HTML CSS por el lado del front, Php y estructura
+  API REST y avanzando con Angular y Ionic / con bases de datos y
+  deploy en firebase.
+</Text>
+<Text $size="1.3em" $margin="10px 0px 0px 16px" $weight="500">
+  C - C# - HTML CSS - Typescrips - Angular - Ionic - firebase
+</Text>
+<Text $size="1em" $margin="8px 0px 0px 16px" $weight="400">
+  <Span $colorparam="#ffffffc8">
+    Extras: Git - Sistema linux - POO
+  </Span>
+</Text>
+
+</TextContainer> */
+}
