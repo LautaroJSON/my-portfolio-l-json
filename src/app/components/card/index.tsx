@@ -190,7 +190,7 @@ function Card() {
               </Text>
             </TextContainer>
             <br />
-            <TextContainer $animationdelay="1.5s">
+            <TextContainer $animationdelay="0.8s">
               <Text $size="1.3em" $weight="500" $margin="10px 0px 0px 0px">
                 <Span $colorparam="white" $border="1px solid white">
                   <Link
@@ -205,9 +205,7 @@ function Card() {
                     Github
                   </Link>
                 </Span>
-                {/* <Span $colorparam="white" $border="1px solid white">
-                  Mail
-                </Span> */}
+
                 <Span $colorparam="white" $border="1px solid white">
                   <a
                     href="/files/CV_LAUTARO_FERNANDEZ_2023-ES.pdf"

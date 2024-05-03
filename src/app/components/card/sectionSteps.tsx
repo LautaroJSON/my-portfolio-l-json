@@ -1,7 +1,7 @@
 import { TextContainer, Text, Span } from "./styles"
 
 const config = {
-  animationDeplay: 1,
+  animationDeplay: 1.4,
 }
 
 export const jsxStep = {
@@ -18,10 +18,21 @@ export const jsxStep = {
         Emergencias
       </Text>
       <Text $size="1.3em" $margin="10px 0px 0px 16px">
-        Trabajando en diferentes proyectos web apps a gran escala de Inició a
-        fin dirigido a sus usuarios (operativos, Administrativos, comerciales,
-        médicos) para los diferentes negocios de salud digital de la compañía,
-        con la escalabilidad bajo el modelo SaaS y metodologia AGILE
+        Trabajando en diferentes{" "}
+        <Span $colorparam="#FAED70">Desarrollos de Web App</Span> a gran escala
+        de inicio a fin de dirigir a los usuarios de la empresa (operativos,
+        administrativos, comerciales, médicos) para sus negocios de salud
+        digital.
+      </Text>
+
+      <Text $size="1.3em" $margin="10px 0px 0px 16px">
+        Mi tarea incluye corrección de <Span $colorparam="#FAED70">PRs</Span>,
+        participación activa en
+        <Span $colorparam="#FAED70">Reglas de Negocio</Span> sugiriendo posibles
+        <Span $colorparam="#FAED70"> Soluciones Tecnológicas </Span> y
+        llevándolas a cabo con la célula de front. Dando sugerencias y feedback
+        <Span $colorparam="#FAED70"> UX/UI</Span> y ayudando al equipo en
+        conocimientos técnicos.
       </Text>
       <Text $size="1.3em" $margin="10px 0px 0px 16px" $weight="500">
         NextJS - Typescript - html - Sass - styled-components
