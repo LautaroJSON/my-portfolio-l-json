@@ -16,6 +16,7 @@ import {
 } from "./styles"
 import Icons from "../icons"
 import { ArrayStep, jsxStep } from "./sectionSteps"
+import Link from "next/link"
 
 interface Position {
   x: number
@@ -192,24 +193,24 @@ function Card() {
             <TextContainer $animationdelay="1.5s">
               <Text $size="1.3em" $weight="500" $margin="10px 0px 0px 0px">
                 <Span $colorparam="white" $border="1px solid white">
-                  <a
+                  <Link
                     href="https://www.linkedin.com/in/lautaro-fernandez-json/"
                     target="_blank"
                   >
                     LinkIn
-                  </a>
+                  </Link>
                 </Span>
                 <Span $colorparam="white" $border="1px solid white">
-                  <a href="https://github.com/LautaroJSON" target="_blank">
+                  <Link href="https://github.com/LautaroJSON" target="_blank">
                     Github
-                  </a>
+                  </Link>
                 </Span>
-                <Span $colorparam="white" $border="1px solid white">
+                {/* <Span $colorparam="white" $border="1px solid white">
                   Mail
-                </Span>
+                </Span> */}
                 <Span $colorparam="white" $border="1px solid white">
                   <a
-                    href="/assets/CV_LAUTARO_FERNANDEZ_2023-ES.pdf"
+                    href="/files/CV_LAUTARO_FERNANDEZ_2023-ES.pdf"
                     download="CV_LAUTARO_FERNANDEZ_2023-ES.pdf"
                   >
                     Curriculum
