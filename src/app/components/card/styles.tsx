@@ -207,7 +207,7 @@ export const Text = styled.p<{
 export const TextContainer = styled.div<{ $animationdelay?: string }>`
   animation: ${startAnimation} 1.6s ease forwards;
   animation-delay: ${(props) =>
-    props.$animationdelay ? `${props.$animationdelay}` : "1s"};
+    props.$animationdelay ? `${props.$animationdelay}` : "none"};
 
   opacity: 0;
   /* display: none; */
