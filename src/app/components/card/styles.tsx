@@ -69,6 +69,17 @@ const apperAnimation = keyframes`
 `
 export const CardContainer = styled.div`
   color: white;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:link,
+  :visited,
+  :hover,
+  :active {
+    color: #fff;
+  }
 `
 export const CardStyled = styled.div<{
   $rotating: boolean
@@ -148,11 +159,13 @@ export const Span = styled.span<{ $colorparam?: string; $border?: string }>`
       padding: 6px;
       cursor: pointer;
       margin: 0px 16px;
-      transition: all 0.3s;
+      transition: padding 0.3s;
       box-shadow: 0px 6px 9px 0px rgba(22, 22, 22, 0.3);
 
       &:hover {
-        border: 3px solid ${$colorparam};
+        /* border: 3px solid ${$colorparam}; */
+        padding: 8px;
+
         background-color: #00000055;
         box-shadow: 0px 6px 9px 0px rgba(26, 26, 26, 0.7);
       }
