@@ -59,11 +59,21 @@ const apperAnimation = keyframes`
   0%{
     /* outline: none; */
     opacity: 1;
-  } 20%{
+  } 10%{
+    opacity: 0.5;
+
     /* outline: 3px solid #eeeeeeaa;; */
   } 
-  45%{
-    opacity: 0.5;
+  15%{
+    opacity: 1;
+    /* outline: none; */
+  }
+  20%{
+    opacity:  0.8;
+    /* outline: none; */
+  }
+  100%{
+    opacity: 1;
     /* outline: none; */
   }
 `
@@ -210,7 +220,6 @@ export const TextContainer = styled.div<{ $animationdelay?: string }>`
     props.$animationdelay ? `${props.$animationdelay}` : "none"};
 
   opacity: 0;
-  /* display: none; */
 `
 export const Icon = styled.div`
   display: flex;
@@ -230,7 +239,7 @@ export const IconContainer = styled.div`
 export const Button = styled.button`
   padding: 1vh;
   border: 1px solid #eeeeeeaa;
-  /* border-radius: 34px; */
+
   box-shadow: 0px 8px 32px 0px rgba(22, 22, 22, 0.4);
   background-color: transparent;
   transition: background-color 0.6s;
@@ -243,9 +252,7 @@ export const Button = styled.button`
 export const CardFooter = styled.div`
   display: flex;
   justify-content: space-between;
-  /* justify-content: flex-end; */
   padding: 16px;
-  /* margin-top: 36px; */
   box-sizing: border-box;
 
   .hidden {
