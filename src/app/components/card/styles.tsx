@@ -57,19 +57,18 @@ const typingAnimation = keyframes`
 `
 const apperAnimation = keyframes`
   0%{
-    border: none;
+    /* outline: none; */
     opacity: 1;
   } 20%{
-    border: 5px solid #333;
+    /* outline: 3px solid #eeeeeeaa;; */
   } 
   45%{
-    opacity: 0.3;
-    border: none;
+    opacity: 0.5;
+    /* outline: none; */
   }
 `
 export const CardContainer = styled.div`
   color: white;
-
   a {
     text-decoration: none;
   }
@@ -87,6 +86,8 @@ export const CardStyled = styled.div<{
   $start: boolean
 }>`
   position: relative;
+  display: grid;
+  grid-template-rows: 50px auto 80px;
   width: 977px;
   height: 855px;
   border-radius: 16px;
@@ -97,11 +98,11 @@ export const CardStyled = styled.div<{
   backdrop-filter: blur(200px);
   background-color: #2c2c2c6b;
 
-  transition: box-shadow 0.6s ease;
-  box-shadow: 0px 3px 6px 0px rgba(22, 22, 22, 0.3);
+  transition: box-shadow 0.6s ease-in-out;
+  box-shadow: 0px 8px 32px 0px rgba(22, 22, 22, 0.4);
 
   &:hover {
-    box-shadow: 0px 3px 6px 4px rgba(121, 45, 149, 0.7);
+    box-shadow: 0px 4px 16px 4px rgba(121, 45, 149, 0.6);
   }
 
   ${({ $start }) =>
@@ -139,35 +140,39 @@ export const CardStyled = styled.div<{
   }
 `
 export const CardHeader = styled.div`
+  /* position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
   user-select: none;
   padding: 4px 4px 11px 4px;
-  /* border-bottom: 1px solid #696969; */
 `
 export const CardContent = styled.div`
+  box-sizing: border-box;
   padding: 16px;
+  overflow: auto;
 `
 export const Span = styled.span<{ $colorparam?: string; $border?: string }>`
   color: ${(props) => (props.$colorparam ? props.$colorparam : "white")};
+  /* display: flex; */
   ${({ $border, $colorparam }) =>
     $border &&
     css`
-      border: ${$border};
-      padding: 6px;
+      /* border: ${$border}; */
+      border: 1px solid #eeeeeeaa;
+      padding: 6px 8px;
       cursor: pointer;
-      margin: 0px 16px;
-      transition: padding 0.3s;
-      box-shadow: 0px 6px 9px 0px rgba(22, 22, 22, 0.3);
+      margin: 0px 6px;
+      transition: background-color 0.6s;
+      box-shadow: 0 8px 32px 0px rgba(31, 38, 135, 0.3);
 
       &:hover {
-        /* border: 3px solid ${$colorparam}; */
-        padding: 8px;
-
-        background-color: #00000055;
-        box-shadow: 0px 6px 9px 0px rgba(26, 26, 26, 0.7);
+        background-color: #00000030;
+        box-shadow: 0 8px 32px 0px rgba(26, 26, 26, 0.7);
       }
     `}
 
@@ -221,4 +226,37 @@ export const Icon = styled.div`
 export const IconContainer = styled.div`
   display: flex;
   gap: 16px;
+`
+export const Button = styled.button`
+  padding: 1vh;
+  border: 1px solid #eeeeeeaa;
+  /* border-radius: 34px; */
+  box-shadow: 0px 8px 32px 0px rgba(22, 22, 22, 0.4);
+  background-color: transparent;
+  transition: background-color 0.6s;
+
+  &:hover {
+    background-color: #00000080;
+    box-shadow: 0px 6px 9px 0px rgba(26, 26, 26, 0.7);
+  }
+`
+export const CardFooter = styled.div`
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: flex-end; */
+  padding: 16px;
+  /* margin-top: 36px; */
+  box-sizing: border-box;
+
+  .hidden {
+    visibility: hidden;
+  }
+`
+
+export const InfoContainerStep = styled.section<{ $triggerAnimation: boolean }>`
+  ${({ $triggerAnimation }) =>
+    $triggerAnimation &&
+    css`
+      animation: ${apperAnimation} 1.6s ease;
+    `}
 `
