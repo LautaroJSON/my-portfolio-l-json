@@ -166,10 +166,17 @@ function Card() {
             <TextContainer $animationdelay="1.5s">
               <Text $size="1.3em" $weight="500" $margin="10px 0px 0px 0px">
                 <Span $colorparam="white" $border="1px solid white">
-                  LinkIn
+                  <a
+                    href="https://www.linkedin.com/in/lautaro-fernandez-json/"
+                    target="_blank"
+                  >
+                    LinkIn
+                  </a>
                 </Span>
                 <Span $colorparam="white" $border="1px solid white">
-                  Github
+                  <a href="https://github.com/LautaroJSON" target="_blank">
+                    Github
+                  </a>
                 </Span>
                 <Span $colorparam="white" $border="1px solid white">
                   Mail
@@ -200,7 +207,7 @@ function Card() {
               <Text $size="1.6em" $weight="500" $margin="36px 0px 0px 0px">
                 <Span $colorparam="#FAED70">💼 Experiencia laboral</Span>
               </Text>
-              <Text $size="1em" $weight="300" $margin="36px 0px 0px 16px">
+              <Text $size="1em" $weight="300" $margin="24px 0px 0px 16px">
                 <Span $colorparam="#ffffffc8">Actualidad - 2021</Span>
               </Text>
               <Text $size="1.3em" $weight="600" $margin="10px 0px 0px 16px">
