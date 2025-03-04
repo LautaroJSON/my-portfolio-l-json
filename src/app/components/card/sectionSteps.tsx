@@ -11,7 +11,34 @@ export const jsxStep = {
         <Span $colorparam="#FAED70">💼 Experiencia laboral</Span>
       </Text>
       <Text $size="1em" $weight="300" $margin="24px 0px 0px 16px">
-        <Span $colorparam="#ffffffc8">Actualidad - 2021</Span>
+        <Span $colorparam="#ffffffc8">Actualidad - 2025</Span>
+      </Text>
+      <Text $size="1.3em" $weight="600" $margin="10px 0px 0px 16px">
+        <Span $colorparam="#FAED70">Front-End Arquitecture Developer - NX React Ts </Span>|
+        Ovidio - La Nacion
+      </Text>
+      <Text $size="1.3em" $margin="10px 0px 0px 16px">
+        Dentro del chapter de 
+        <Span $colorparam="#FAED70"> Arquitectura Front-End</Span> cross a todos los chaptes, ayudando y definiendo extructuras de proyectos. 
+      </Text>
+
+      <Text $size="1.3em" $margin="10px 0px 0px 16px">
+        Trabajando principalmente en el desarrollo de un template <Span $colorparam="#FAED70">Monorepo</Span> para front end, con <Span $colorparam="#FAED70">Nx</Span> incluyendo la base de un <Span $colorparam="#FAED70">Design System</Span>, con Storybook 8.0
+        interiorizandome en el equipo de UX/UI y herramientas como figma
+       
+      </Text>
+      <Text $size="1.3em" $margin="10px 0px 0px 16px" $weight="500">
+        React - Typescript - Taildwind - Storybook - Nx
+      </Text>
+      <Text $size="1em" $margin="8px 0px 0px 16px" $weight="400">
+        <Span $colorparam="#ffffffc8">
+          Extras: Azure - Teams - Slack - Figma - Desyng Sistem
+        </Span>
+      </Text>
+      <br />
+      <hr />
+      <Text $size="1em" $weight="300" $margin="24px 0px 0px 16px">
+        <Span $colorparam="#ffffffc8">2024 - 2021</Span>
       </Text>
       <Text $size="1.3em" $weight="600" $margin="10px 0px 0px 16px">
         <Span $colorparam="#FAED70">Front-End developer - NextJS </Span>|
@@ -28,9 +55,9 @@ export const jsxStep = {
       <Text $size="1.3em" $margin="10px 0px 0px 16px">
         Mi tarea incluye corrección de <Span $colorparam="#FAED70">PRs</Span>,
         participación activa en
-        <Span $colorparam="#FAED70">Reglas de Negocio</Span> sugiriendo posibles
+        <Span $colorparam="#FAED70"> Reglas de Negocio</Span> sugiriendo posibles
         <Span $colorparam="#FAED70"> Soluciones Tecnológicas </Span> y
-        llevándolas a cabo con la célula de front. Dando sugerencias y feedback
+        llevándolas a cabo con la célula de front. Sugerencias y feedback
         <Span $colorparam="#FAED70"> UX/UI</Span> y ayudando al equipo en
         conocimientos técnicos.
       </Text>

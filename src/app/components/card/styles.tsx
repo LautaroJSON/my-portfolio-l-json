@@ -261,6 +261,9 @@ export const CardFooter = styled.div`
 `
 
 export const InfoContainerStep = styled.section<{ $triggerAnimation: boolean }>`
+  height: 425px;
+  overflow: auto;
+
   ${({ $triggerAnimation }) =>
     $triggerAnimation &&
     css`
