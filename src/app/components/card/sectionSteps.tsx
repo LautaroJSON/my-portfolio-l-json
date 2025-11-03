@@ -11,7 +11,6 @@ export const jsxStep = {
         <Span $colorparam="#FAED70">💼 Experiencia laboral</Span>
       </Text>
       <Text $size="1em" $weight="300" $margin="24px 0px 0px 16px">
-        <Span $colorparam="#ffffffc8">Actualidad - 2021</Span>
         <Span $colorparam="#ffffffc8">Actualidad - 2025</Span>
       </Text>
       <Text $size="1.3em" $weight="600" $margin="10px 0px 0px 16px">
@@ -61,11 +60,9 @@ export const jsxStep = {
       <Text $size="1.3em" $margin="10px 0px 0px 16px">
         Mi tarea incluye corrección de <Span $colorparam="#FAED70">PRs</Span>,
         participación activa en
-        <Span $colorparam="#FAED70">Reglas de Negocio</Span> sugiriendo posibles
         <Span $colorparam="#FAED70"> Reglas de Negocio</Span> sugiriendo
         posibles
         <Span $colorparam="#FAED70"> Soluciones Tecnológicas </Span> y
-        llevándolas a cabo con la célula de front. Dando sugerencias y feedback
         llevándolas a cabo con la célula de front. Sugerencias y feedback
         <Span $colorparam="#FAED70"> UX/UI</Span> y ayudando al equipo en
         conocimientos técnicos.
