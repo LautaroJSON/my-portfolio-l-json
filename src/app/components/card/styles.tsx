@@ -41,11 +41,12 @@ const startAnimation = keyframes`
     from{
       transform: translateY(30px);
       opacity: 0.3;
-      filter: blur(3px);
+
     }
     to{
       transform: translateY(0px);
       opacity: 1;
+
     }
 `
 const blinkAnimation = keyframes`
@@ -150,10 +151,6 @@ export const CardStyled = styled.div<{
   }
 `
 export const CardHeader = styled.div`
-  /* position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -251,15 +248,20 @@ export const Button = styled.button`
 `
 export const CardFooter = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
+  gap: 16px;
+
   padding: 16px;
   box-sizing: border-box;
 
   .hidden {
     visibility: hidden;
   }
-`
 
+  button {
+    cursor: pointer;
+  }
+`
 export const InfoContainerStep = styled.section<{ $triggerAnimation: boolean }>`
   height: 425px;
   overflow: auto;
