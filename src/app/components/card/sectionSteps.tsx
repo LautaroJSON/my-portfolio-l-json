@@ -10,65 +10,70 @@ export const jsxStep = {
       <Text $size="1.6em" $weight="500" $margin="36px 0px 0px 0px">
         <Span $colorparam="#FAED70">💼 Experiencia laboral</Span>
       </Text>
+
+      {/* Rol Actual */}
       <Text $size="1em" $weight="300" $margin="24px 0px 0px 16px">
         <Span $colorparam="#ffffffc8">Actualidad - 2025</Span>
       </Text>
       <Text $size="1.3em" $weight="600" $margin="10px 0px 0px 16px">
         <Span $colorparam="#FAED70">
-          Front-End Arquitecture Developer - NX React Ts{" "}
-        </Span>
-        | Ovidio - La Nacion
+          Front-End Architecture Developer - NX React TS
+        </Span>{" "}
+        | Ovidio - La Nación
       </Text>
       <Text $size="1.3em" $margin="10px 0px 0px 16px">
-        Dentro del chapter de
-        <Span $colorparam="#FAED70"> Arquitectura Front-End</Span> cross a todos
-        los chaptes, ayudando y definiendo extructuras de proyectos.
+        Colaboro en el{" "}
+        <Span $colorparam="#FAED70">chapter de Arquitectura Front-End</Span> de
+        manera cross-team, definiendo la estructura de proyectos y estándares de
+        desarrollo para todo el equipo.
       </Text>
-
       <Text $size="1.3em" $margin="10px 0px 0px 16px">
-        Trabajando principalmente en el desarrollo de un template{" "}
-        <Span $colorparam="#FAED70">Monorepo</Span> para front end, con{" "}
-        <Span $colorparam="#FAED70">Nx</Span> incluyendo la base de un{" "}
-        <Span $colorparam="#FAED70">Design System</Span>, con Storybook 8.0
-        interiorizandome en el equipo de UX/UI y herramientas como figma
+        Lidero el desarrollo de un template{" "}
+        <Span $colorparam="#FAED70">Monorepo</Span> con{" "}
+        <Span $colorparam="#FAED70">Nx</Span> y un{" "}
+        <Span $colorparam="#FAED70">Design System</Span> completo, utilizando{" "}
+        <Span $colorparam="#FAED70">Storybook 8.0</Span>. Colaboro estrechamente
+        con el equipo de UX/UI y herramientas como Figma para mejorar la
+        experiencia del usuario y la eficiencia del desarrollo.
       </Text>
       <Text $size="1.3em" $margin="10px 0px 0px 16px" $weight="500">
-        React - Typescript - Taildwind - Storybook - Nx
+        React - TypeScript - Tailwind - Storybook - Nx
       </Text>
       <Text $size="1em" $margin="8px 0px 0px 16px" $weight="400">
         <Span $colorparam="#ffffffc8">
-          Extras: Azure - Teams - Slack - Figma - Desyng Sistem
+          Herramientas: Azure - Teams - Slack - Figma - Design System
         </Span>
       </Text>
+
       <br />
       <hr />
+
+      {/* Rol Anterior */}
       <Text $size="1em" $weight="300" $margin="24px 0px 0px 16px">
-        <Span $colorparam="#ffffffc8">2024 - 2021</Span>
+        <Span $colorparam="#ffffffc8">2021 - 2024</Span>
       </Text>
       <Text $size="1.3em" $weight="600" $margin="10px 0px 0px 16px">
-        <Span $colorparam="#FAED70">Front-End developer - NextJS </Span>|
+        <Span $colorparam="#FAED70">Front-End Developer - NextJS</Span> |
         Emergencias
       </Text>
       <Text $size="1.3em" $margin="10px 0px 0px 16px">
-        Trabajando en diferentes{" "}
-        <Span $colorparam="#FAED70">Desarrollos de Web App</Span> a gran escala
-        de inicio a fin de dirigir a los usuarios de la empresa (operativos,
-        administrativos, comerciales, médicos) para sus negocios de salud
-        digital.
+        Desarrolle
+        <Span $colorparam="#FAED70"> Web Apps a gran escala</Span> desde la
+        concepción hasta el despliegue, orientadas a usuarios operativos,
+        administrativos, comerciales y médicos en el sector de salud digital.
       </Text>
-
       <Text $size="1.3em" $margin="10px 0px 0px 16px">
-        Mi tarea incluye corrección de <Span $colorparam="#FAED70">PRs</Span>,
-        participación activa en
-        <Span $colorparam="#FAED70"> Reglas de Negocio</Span> sugiriendo
-        posibles
-        <Span $colorparam="#FAED70"> Soluciones Tecnológicas </Span> y
-        llevándolas a cabo con la célula de front. Sugerencias y feedback
-        <Span $colorparam="#FAED70"> UX/UI</Span> y ayudando al equipo en
-        conocimientos técnicos.
+        Mis responsabilidades incluyen revisión y corrección de{" "}
+        <Span $colorparam="#FAED70">PRs</Span>, participación activa en{" "}
+        <Span $colorparam="#FAED70">Reglas de Negocio</Span>, diseño e
+        implementación de{" "}
+        <Span $colorparam="#FAED70">Soluciones Tecnológicas</Span>, así como
+        brindar feedback en <Span $colorparam="#FAED70">UX/UI</Span> y mentoría
+        técnica al equipo de front-end. Logré mejorar la eficiencia del flujo de
+        desarrollo y reducir errores en producción.
       </Text>
       <Text $size="1.3em" $margin="10px 0px 0px 16px" $weight="500">
-        NextJS - Typescript - html - Sass - styled-components
+        NextJS - TypeScript - HTML - Sass - Styled-components
       </Text>
       <Text $size="1em" $margin="8px 0px 0px 16px" $weight="400">
         <Span $colorparam="#ffffffc8">
@@ -81,38 +86,37 @@ export const jsxStep = {
   formation: (
     <TextContainer $animationdelay={`${config.animationDeplay}s`}>
       <Text $size="1.6em" $weight="500" $margin="36px 0px 0px 0px">
-        <Span $colorparam="#BB80B3">👨‍🏫 Formacion</Span>
+        <Span $colorparam="#BB80B3">👨‍🏫 Formación</Span>
       </Text>
       <Text $size="1em" $weight="300" $margin="24px 0px 0px 16px">
         <Span $colorparam="#ffffffc8">2018 - 2020</Span>
       </Text>
       <Text $size="1.3em" $weight="600" $margin="10px 0px 0px 16px">
-        <Span $colorparam="#BB80B3">UTN FRA </Span>| Tecnico Superior en
-        Programacion
+        <Span $colorparam="#BB80B3">UTN FRA</Span> | Técnico Superior en
+        Programación
       </Text>
       <Text $size="1.3em" $margin="10px 0px 0px 16px">
-        Comenzando con ABMs en <Span $colorparam="#BB80B3"> C</Span>, luego en
-        <Span $colorparam="#BB80B3"> C# </Span>
-        conectando con bases de datos locales{" "}
-        <Span $colorparam="#BB80B3"> MySQL</Span>, Por el lado{" "}
-        <Span $colorparam="#BB80B3"> Front-End </Span> HTML CSS y JS, para luego
-        agregar Angular/Typecrips. Ionic para
-        <Span $colorparam="#BB80B3"> App Moviles </Span> con deploy en firebase.
-        Php y estructura API REST por el lado
-        <Span $colorparam="#BB80B3"> Back-End.</Span>
+        Inicié con ABMs en <Span $colorparam="#BB80B3">C</Span> y{" "}
+        <Span $colorparam="#BB80B3">C#</Span>, conectando con bases de datos{" "}
+        <Span $colorparam="#BB80B3">MySQL</Span>. En el front-end trabajé con
+        HTML, CSS y JS, agregando Angular/TypeScript y{" "}
+        <Span $colorparam="#BB80B3">Ionic</Span> para apps móviles con
+        despliegue en Firebase. Por el lado del back-end, implementé APIs REST
+        con PHP.
       </Text>
       <Text $size="1.3em" $margin="24px 0px 0px 16px" $weight="500">
-        C - C# - HTML CSS - Typescrips - Bases de datos (MySql) - Php - Angular
-        - Ionic - firebase
+        C - C# - HTML - CSS - TypeScript - MySQL - PHP - Angular - Ionic -
+        Firebase
       </Text>
       <Text $size="1em" $margin="8px 0px 0px 16px" $weight="400">
         <Span $colorparam="#ffffffc8">
-          Git - Bash Linux - Programacion Orientada a Obejetos - Arquitectura
+          Git - Bash/Linux - Programación Orientada a Objetos - Arquitectura
           REST API - PWA
         </Span>
       </Text>
     </TextContainer>
   ),
+
   proyects: (
     <TextContainer $animationdelay={`${config.animationDeplay}s`}>
       <Text $size="1.6em" $weight="500" $margin="36px 0px 0px 0px">

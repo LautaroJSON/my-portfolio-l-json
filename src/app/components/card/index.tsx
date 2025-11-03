@@ -183,17 +183,14 @@ function Card() {
             </Text>
             <TextContainer>
               <Text $weight="500" $size="1.6em" $margin="36px 0px 16px 0px">
-                Hello world, soy Lautaro!
+                ¡Hola! Soy Lautaro
               </Text>
 
               <Text $weight="300" $size="1.6em">
-                Un
                 <Span $colorparam="#FAED70"> Desarrollador Full-Stack </Span>
-                con
-                <Span $colorparam="#9ECE58"> +4 años </Span>de experiencia
-                <br />
-                residido en
-                <Span $colorparam="#89DDFF"> Buenos Aires, Argentina. </Span>
+                con <Span $colorparam="#BB80B3">+4 años de experiencia </Span>
+                creando aplicaciones web escalables y optimizadas residiendo en{" "}
+                <Span $colorparam="#89DDFF">Buenos Aires, Argentina</Span>.
               </Text>
             </TextContainer>
             <br />
@@ -204,12 +201,12 @@ function Card() {
                     href="https://www.linkedin.com/in/lautaro-fernandez-json/"
                     target="_blank"
                   >
-                    LinkIn
+                    LinkedIn
                   </Link>
                 </Span>
                 <Span $colorparam="white" $border="1px solid white">
                   <Link href="https://github.com/LautaroJSON" target="_blank">
-                    Github
+                    GitHub
                   </Link>
                 </Span>
 
