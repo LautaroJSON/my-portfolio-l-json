@@ -208,8 +208,9 @@ function Card() {
 
                 <Span $colorparam="white" $border="1px solid white">
                   <a
-                    href="/files/CV_LAUTARO_FERNANDEZ_2023-ES.pdf"
-                    download="CV_LAUTARO_FERNANDEZ_2023-ES.pdf"
+                    href="files/CV_LAUTARO_FERNANDEZ_2025_MEJORADO.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Curriculum
                   </a>
