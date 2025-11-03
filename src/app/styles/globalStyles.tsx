@@ -5,6 +5,42 @@ const bgAnimation = keyframes`
     to{background-position: 100% 100%;}
 `
 export const GlobalStyles = createGlobalStyle`
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #bb80b3, #6d28d9);
+  border-radius: 10px;
+  border: 2px solid rgba(20, 20, 40, 0.6);
+  transition: background 0.3s ease;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #faed70, #bb80b3);
+}
+
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #bb80b3 rgba(255, 255, 255, 0.05);
+}
+
         
     body{
         font-family: "Roboto", sans-serif;
