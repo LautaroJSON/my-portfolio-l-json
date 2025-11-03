@@ -229,6 +229,7 @@ function Card() {
               {renderStep()}
             </InfoContainerStep>
           </CardContent>
+
           <CardFooter>
             <Button
               onClick={() => handleNextStep("back")}
