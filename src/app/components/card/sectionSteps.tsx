@@ -79,8 +79,15 @@ export const jsxStep = {
       </Text>
     </TextContainer>
   ),
+  proyects: (
+    <TextContainer $animationdelay={`${config.animationDeplay}s`}>
+      <Text $size="1.6em" $weight="500" $margin="36px 0px 0px 0px">
+        <Span $colorparam="#9ECE58">🚀 Proyectos</Span>
+      </Text>
+    </TextContainer>
+  ),
 }
 
 export type StepsTypes = keyof typeof jsxStep
 
-export const ArrayStep: Array<StepsTypes> = ["work", "formation"]
+export const ArrayStep: Array<StepsTypes> = ["work", "formation", "proyects"]

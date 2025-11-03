@@ -18,18 +18,11 @@ import Icons from "../icons"
 import { ArrayStep, jsxStep } from "./sectionSteps"
 import Link from "next/link"
 
-interface Position {
-  x: number
-  y: number
-}
-
 function Card() {
   const timerRef = useRef<any>(null)
   const [fullScreenElement, setFullScreenElement] =
     useState<HTMLHtmlElement | null>(null)
-  const [isDragging, setIsDragging] = useState(false)
-  const [position, setPosition] = useState<Position>({ x: 0, y: 0 })
-  const [offset, setOffset] = useState<Position>({ x: 0, y: 0 })
+
   const [animations, setAnimations] = useState<{
     rotate: boolean
     shake: boolean
@@ -55,23 +48,39 @@ function Card() {
 
     timerRef.current = timeout
   }
-  const handleMouseDown = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    setIsDragging(true)
-    setOffset({
+
+  // Estado de posición
+  const offset = useRef({ x: 0, y: 0 })
+  const isDragging = useRef(false)
+  const [position, setPosition] = useState({ x: 50, y: 0 })
+
+  // Drag control
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    isDragging.current = true
+    offset.current = {
       x: e.clientX - position.x,
       y: e.clientY - position.y,
-    })
+    }
+    document.addEventListener("mousemove", handleMouseMove)
+    document.addEventListener("mouseup", handleMouseUp)
   }
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    if (!isDragging) return
+
+  const handleMouseMove = (e: MouseEvent) => {
+    if (!isDragging.current) return
     setPosition({
-      x: e.clientX - offset.x,
-      y: e.clientY - offset.y,
+      x: e.clientX - offset.current.x,
+      y: e.clientY - offset.current.y,
     })
   }
+
   const handleMouseUp = () => {
-    setIsDragging(false)
+    isDragging.current = false
+    document.removeEventListener("mousemove", handleMouseMove)
+    document.removeEventListener("mouseup", handleMouseUp)
   }
+
+  // Fullscreen control
   const handleFullScreenToogle = () => {
     if (document.fullscreenElement) {
       document.exitFullscreen()
@@ -118,6 +127,7 @@ function Card() {
     <>
       <CardContainer>
         <CardStyled
+          onMouseDown={handleMouseDown}
           $rotating={animations.rotate}
           $shaking={animations.shake}
           $start={animations.start}
@@ -127,9 +137,6 @@ function Card() {
           }}
         >
           <CardHeader
-            onMouseDown={handleMouseDown}
-            onMouseMove={handleMouseMove}
-            onMouseUp={handleMouseUp}
             style={{
               cursor: isDragging ? "grabbing" : "grab",
             }}
